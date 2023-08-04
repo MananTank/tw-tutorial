@@ -11,7 +11,7 @@ function WelcomeTutorial() {
 		<div>
 			<p>
 				Welcome to the thirdweb React SDK tutorial! This will teach you everything you need to know
-				to easily build web3 applications with ease.
+				to easily build web3 applications.
 			</p>
 
 			<p>
@@ -84,19 +84,6 @@ function ThirdwebProviderTutorial() {
 				</a>{' '}
 				and then copy the clientId to pass as a prop to the{' '}
 				<code data-inline> {'<ThirdwebProvider />'} </code>
-			</p>
-
-			<h2> What is Thirdweb React SDK? </h2>
-
-			<p>
-				A collection of <em> 100+ React hooks</em> and <em> UI components </em> for your web3 apps,
-				for <em> Any EVM-compatible blockchain. </em>
-			</p>
-
-			<p>
-				Connect to user{`'`}s wallets, interact with smart contracts, sign messages, and utilize
-				common standards such as tokens, NFTs, marketplaces; all with built-in caching, RPC URLs,
-				IPFS gateways, and more.
 			</p>
 		</div>
 	);
