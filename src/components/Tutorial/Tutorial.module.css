@@ -1,0 +1,90 @@
+.tutorialSelector {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+
+.tutorialContainer p {
+	margin: 0;
+	margin-bottom: 20px;
+	line-height: 1.6;
+	font-weight: 400;
+	color: var(--fg-dull);
+}
+
+.tutorialContainer a {
+	color: var(--fg-link);
+	text-decoration: underline;
+}
+
+.tutorialContainer h2 {
+	font-weight: 400;
+	font-size: 24px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid var(--bg-elevated);
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.tutorialContainer h3 {
+	font-weight: 400;
+	font-size: 20px;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.tutorialContainer em {
+	color: var(--fg-link);
+	font-style: normal;
+	font-weight: 500;
+}
+
+.tutorialContainer code:not([data-inline]) {
+	background-color: var(--bg-dark);
+	padding: 14px;
+	display: block;
+	font-size: 14px;
+	border-radius: 6px;
+	color: var(--fg);
+	margin-bottom: 20px;
+	border: 1px solid var(--bg-elevated);
+}
+
+.tutorialContainer code[data-inline] {
+	background-color: var(--bg-dark);
+	padding: 2px 6px;
+	display: inline-block;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 14px;
+	border-radius: 6px;
+	color: var(--fg);
+	border: 1px solid var(--bg-elevated);
+}
+
+.nextBtn {
+	all: unset;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	background: none;
+	color: var(--bg-elevated);
+	padding: 10px;
+	gap: 2em;
+	font-weight: 500;
+	margin-top: 30px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	background: var(--fg-link);
+	box-shadow: 2px 2px 2px rbga(0, 0, 0, 0.1);
+}
+
+.hr {
+	border: none;
+	border-bottom: 2px solid var(--bg-elevated);
+	margin: 20px 0;
+}
