@@ -10,7 +10,7 @@ function WelcomeTutorial() {
 	return (
 		<div>
 			<p>
-				Welcome to the Thirdweb React SDK tutorial! This will teach you everything you need to know
+				Welcome to the thirdweb React SDK tutorial! This will teach you everything you need to know
 				to easily build web3 applications with ease.
 			</p>
 
@@ -21,7 +21,7 @@ function WelcomeTutorial() {
 				</a>
 			</p>
 
-			<h2> What is Thirdweb React SDK? </h2>
+			<h2> What is thirdweb React SDK? </h2>
 
 			<p>
 				A collection of <em> 100+ React hooks</em> and <em> UI components </em> for your web3 apps,

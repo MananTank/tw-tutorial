@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'] });
 const header = (
 	<Head>
 		<title>Thirweb Tutorial</title>
-		<meta name='description' content='Thirdweb Tutorial' />
+		<meta name='description' content='thirdweb Tutorial' />
 		<meta name='viewport' content='width=device-width, initial-scale=1' />
 		<link rel='icon' href='/favicon.ico' />
 	</Head>
@@ -62,7 +62,7 @@ export default function Home() {
 				<div className={styles.grid}>
 					<div className={styles.explainerContainer}>
 						<nav className={styles.nav}>
-							Thirdweb React SDK Tutorial
+							thirdweb React SDK Tutorial
 							<a
 								className={styles.iconLink}
 								href='https://portal.thirdweb.com/react'
