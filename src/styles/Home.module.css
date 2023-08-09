@@ -11,8 +11,14 @@
 
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 2.5fr;
+	grid-template-columns: 1fr 1.5fr;
 	grid-gap: 1rem;
+}
+
+@media (max-width: 600px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
 }
 
 .explainerContainer {

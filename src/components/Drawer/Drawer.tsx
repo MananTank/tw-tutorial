@@ -3,7 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import styles from './Drawer.module.css';
 import btnStyles from '@/styles/buttons.module.css';
-import { tutorials } from '../Tutorial/Tutorial';
+import { tutorials } from '../Tutorial/tutorials';
 
 export const Drawer = (props: { onSelect: (index: number) => void }) => (
 	<Dialog.Root>
