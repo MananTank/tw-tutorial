@@ -3,6 +3,7 @@ import styles from '../Tutorial.module.css';
 import buttonStyles from '@/styles/buttons.module.css';
 import { useEditorContext } from '@/contexts/EditorContext';
 import { DoubleArrowRightIcon } from '@radix-ui/react-icons';
+import { Button } from '@/components/Elements/Buttons';
 
 const ConnectWalletCode = `\
 import { ThirdwebProvider, ConnectWallet } from '@thirdweb-dev/react';
@@ -80,8 +81,7 @@ function Tutorial() {
 				default value is <code data-inline> {`"dark"`} </code>.
 			</p>
 
-			<button
-				className={buttonStyles.Button}
+			<Button
 				onClick={() => {
 					editiorContext.updateFile('pages/index.tsx', prev => {
 						return ConnectWalletCodeThemeLight;
@@ -89,7 +89,7 @@ function Tutorial() {
 				}}
 			>
 				Show Me <DoubleArrowRightIcon />
-			</button>
+			</Button>
 		</div>
 	);
 
@@ -103,8 +103,7 @@ function Tutorial() {
 				default value is <code data-inline> {`"dark"`} </code>.
 			</p>
 
-			<button
-				className={buttonStyles.Button}
+			<Button
 				onClick={() => {
 					editiorContext.updateFile('pages/index.tsx', prev => {
 						return ConnectWalletCodeBtnTitle;
@@ -112,7 +111,7 @@ function Tutorial() {
 				}}
 			>
 				Show Me <DoubleArrowRightIcon />
-			</button>
+			</Button>
 		</div>
 	);
 

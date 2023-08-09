@@ -40,18 +40,6 @@
 	background: var(--bg);
 }
 
-.iconLink {
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
-	font-size: 16px;
-	cursor: pointer;
-}
-
-.iconLink:hover {
-	color: var(--fg);
-}
-
 .tutorialSelector {
 	display: flex;
 	gap: 16px;

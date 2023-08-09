@@ -8,6 +8,7 @@ import { Spinner } from '@/components/Spinner/Spinner';
 import { FileTextIcon } from '@radix-ui/react-icons';
 import { Tutorial } from '@/components/Tutorial/Tutorial';
 import { EditiorContext } from '@/contexts/EditorContext';
+import { IconLink } from '@/components/Elements/IconLink';
 
 const PROJECT_ID = 'stackblitz-starters-nwqbvy';
 
@@ -63,14 +64,10 @@ export default function Home() {
 					<div className={styles.explainerContainer}>
 						<nav className={styles.nav}>
 							thirdweb React SDK Tutorial
-							<a
-								className={styles.iconLink}
-								href='https://portal.thirdweb.com/react'
-								target='_blank'
-							>
+							<IconLink href='https://portal.thirdweb.com/react' target='_blank'>
 								<FileTextIcon width={16} height={16} />
 								Docs
-							</a>
+							</IconLink>
 						</nav>
 
 						<Tutorial index={tutorialIndex} onSelect={setTutorialIndex} />

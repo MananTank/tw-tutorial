@@ -1,10 +1,10 @@
 import { Drawer } from '@/components/Drawer/Drawer';
 import styles from './Tutorial.module.css';
-import buttonStyles from '@/styles/buttons.module.css';
 import { DoubleArrowRightIcon } from '@radix-ui/react-icons';
 import { useEditorContext } from '@/contexts/EditorContext';
 import { useEffect, useRef } from 'react';
 import { tutorials } from './tutorials';
+import { IconButton } from '../Elements/Buttons';
 
 export function Tutorial(props: { index: number; onSelect: (index: number) => void }) {
 	const editiorContext = useEditorContext();
@@ -34,9 +34,9 @@ export function Tutorial(props: { index: number; onSelect: (index: number) => vo
 						}}
 					>
 						{nextTutorial && (
-							<button className={buttonStyles.IconButton} onClick={goNext}>
+							<IconButton onClick={goNext}>
 								<DoubleArrowRightIcon width={20} height={20} />
-							</button>
+							</IconButton>
 						)}
 					</div>
 				</div>
