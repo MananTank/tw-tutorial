@@ -7,8 +7,8 @@
 :root {
 	--bg: #14181f;
 	--bg-dark: #0f1218;
-	--bg-elevated: #212227;
-	--bg-highlighted: #2f3138;
+	--bg-elevated: #202631;
+	--bg-highlighted: hsl(219 21% 22% / 1);
 	--fg-dull: #a9adbf;
 	--fg: white;
 	--fg-link: rgb(156, 220, 254);

@@ -64,10 +64,15 @@ export default function Home() {
 					<div className={styles.explainerContainer}>
 						<nav className={styles.nav}>
 							thirdweb React SDK Tutorial
-							<IconLink href='https://portal.thirdweb.com/react' target='_blank'>
-								<FileTextIcon width={16} height={16} />
-								Docs
-							</IconLink>
+							<div className={styles.navRight}>
+								<a href='/playground' target='_blank'>
+									Playground
+								</a>
+
+								<a href='https://portal.thirdweb.com/react' target='_blank'>
+									Docs
+								</a>
+							</div>
 						</nav>
 
 						<Tutorial index={tutorialIndex} onSelect={setTutorialIndex} />

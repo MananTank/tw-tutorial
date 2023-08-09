@@ -40,6 +40,11 @@
 	background: var(--bg);
 }
 
+.navRight {
+	display: flex;
+	gap: 16px;
+}
+
 .tutorialSelector {
 	display: flex;
 	gap: 16px;
