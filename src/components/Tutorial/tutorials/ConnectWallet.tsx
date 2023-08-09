@@ -5,7 +5,7 @@ import { useEditorContext } from '@/contexts/EditorContext';
 import { DoubleArrowRightIcon } from '@radix-ui/react-icons';
 import { Button } from '@/components/Elements/Buttons';
 
-const ConnectWalletCode = `\
+const codeBase = `\
 import { ThirdwebProvider, ConnectWallet } from '@thirdweb-dev/react';
 import styles from '../styles/Home.module.css';
 
@@ -26,7 +26,7 @@ function Example() {
 }
 `;
 
-const ConnectWalletCodeThemeLight = `\
+const codeThemeLight = `\
 import { ThirdwebProvider, ConnectWallet } from '@thirdweb-dev/react';
 import styles from '../styles/Home.module.css';
 
@@ -47,7 +47,7 @@ function Example() {
 }
 `;
 
-const ConnectWalletCodeBtnTitle = `\
+const codeBtnTitle = `\
 import { ThirdwebProvider, ConnectWallet } from '@thirdweb-dev/react';
 import styles from '../styles/Home.module.css';
 
@@ -68,6 +68,8 @@ function Example() {
 }
 `;
 
+const connectWalletInlineCode = <code data-inline> ConnectWallet </code>;
+
 function Tutorial() {
 	const editiorContext = useEditorContext();
 
@@ -84,11 +86,11 @@ function Tutorial() {
 			<Button
 				onClick={() => {
 					editiorContext.updateFile('pages/index.tsx', prev => {
-						return ConnectWalletCodeThemeLight;
+						return codeThemeLight;
 					});
 				}}
 			>
-				Show Me <DoubleArrowRightIcon />
+				Change theme <DoubleArrowRightIcon />
 			</Button>
 		</div>
 	);
@@ -98,19 +100,18 @@ function Tutorial() {
 			<h3>btnTitle</h3>
 
 			<p>
-				Change the theme of Connect Wallet UI to <code data-inline> {`"light"`} </code> or{' '}
-				<code data-inline> {`"dark"`} </code> mode, to match the color theme of your app. The
-				default value is <code data-inline> {`"dark"`} </code>.
+				Change the text the button displays while in the disconnected state. The default value is{' '}
+				<code data-inline> {`"Connect Wallet"`} </code>.
 			</p>
 
 			<Button
 				onClick={() => {
 					editiorContext.updateFile('pages/index.tsx', prev => {
-						return ConnectWalletCodeBtnTitle;
+						return codeBtnTitle;
 					});
 				}}
 			>
-				Show Me <DoubleArrowRightIcon />
+				Change btnTitle <DoubleArrowRightIcon />
 			</Button>
 		</div>
 	);
@@ -118,14 +119,21 @@ function Tutorial() {
 	return (
 		<div>
 			<p>
-				<code data-inline> ConnectWallet </code> component allows you to connect to wallets that are
-				specified in <code data-inline> ThirdwebProvider </code>
+				{connectWalletInlineCode} component allows you to connect to wallets that are specified in{' '}
+				<code data-inline> ThirdwebProvider </code> {`'s`}{' '}
+				<a
+					href='https://portal.thirdweb.com/react/react.thirdwebprovider#supportedwallets-optional'
+					target='_blank'
+				>
+					{' '}
+					supportedWallets
+				</a>{' '}
+				prop
 			</p>
 
-			<p>
-				Clicking on the <code data-inline> ConnectWallet </code> button shows wallets in a Modal and
-				shows wallet-specific UI for connecting the wallet when it is selected
-			</p>
+			<p>Clicking on the {connectWalletInlineCode} button shows a modal with a list of wallets.</p>
+
+			<p>Try clicking on the button and connecting to a wallet.</p>
 
 			<h2>Configuration</h2>
 
@@ -139,5 +147,5 @@ function Tutorial() {
 export const ConnectWalletTutorial: TutorialMeta = {
 	name: 'ConnectWallet',
 	component: Tutorial,
-	code: ConnectWalletCode,
+	code: codeBase,
 };

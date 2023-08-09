@@ -1,3 +1,4 @@
+import { Alert } from '@/components/Elements/Alert';
 import { TutorialMeta } from '../TutorialMeta';
 
 const code = `\
@@ -21,19 +22,19 @@ function Example() {
 }
 `;
 
+const ThirdwebCodeInline = <code data-inline> {'<ThirdwebProvider />'} </code>;
+
 function Component() {
 	return (
 		<div>
 			<p>
-				Wrap your application in the <code data-inline> {'<ThirdwebProvider />'} </code> component
-				to start using the SDK.
+				The {ThirdwebCodeInline} component provides access to all of the SDK{`'s`}s hooks and UI
+				components.
 			</p>
 
-			<p>
-				With the provider set up, all of the SDK{`'s`}s hooks and components work out of the box!
-			</p>
+			<p>Wrap your application in the {ThirdwebCodeInline} component to start using the SDK.</p>
 
-			<p>
+			<Alert>
 				To use the React SDK, you need to first create an API key from the{' '}
 				<a href='https://thirdweb.com/create-api-key' target='_blank'>
 					{' '}
@@ -41,7 +42,9 @@ function Component() {
 				</a>{' '}
 				and then copy the clientId to pass as a prop to the{' '}
 				<code data-inline> {'<ThirdwebProvider />'} </code>
-			</p>
+			</Alert>
+
+			<p>In this Tutorial, we will use a demo API key which only works on code playground.</p>
 		</div>
 	);
 }

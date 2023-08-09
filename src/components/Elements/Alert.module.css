@@ -1,0 +1,7 @@
+.Alert {
+	padding: 14px;
+	margin: 20px 0;
+	border: 1px solid var(--bg-highlighted);
+	border-radius: 8px;
+	line-height: 1.6;
+}
